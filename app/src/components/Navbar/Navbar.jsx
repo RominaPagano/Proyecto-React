@@ -1,5 +1,6 @@
+import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
-import logo from '/src/RominaLogo.png'
+import logo from '/src/img/RominaLogo.png'
 
 function Navbar (){
     return(
@@ -11,9 +12,10 @@ function Navbar (){
                     <li> <a href="#">Inicio</a></li>
                     <li> <a href="#">Productos</a></li>
                     <li> <a href="#">Sobre nosotros</a></li>
+                    <li><a className="cta" href="#"><button>Contacto</button></a></li>
                 </ul>
             </nav>
-            <a className="cta" href="#"><button>Contacto</button></a>
+            <CartWidget/>
         </>
     )
 }
