@@ -1,13 +1,20 @@
-*{
-  box-sizing: border-box;
-  margin: 0 ;
-  background-color: #fff4f4 ;
-  text-align: center;
-  
+:root{
+  --bg-color:#ffc9ec;
+  --letra-color: #584391;
+  --boton-color: #ec95ff;
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
 }
 
-.contenedorClick{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(105, 105, 105);
-  font-size: large;
+
+body{
+  box-sizing: border-box;
+  margin: 0 ;
+  text-align: center;
+  background-image: url(./img/bg-img.jpg);
+  font-family: sans-serif;
+  display: flex;
 }
+
