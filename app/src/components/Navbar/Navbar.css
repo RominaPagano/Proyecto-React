@@ -1,5 +1,61 @@
+.contNav{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-li, a {
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+
+}
+
+
+
+/*li, a {
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
@@ -38,14 +94,14 @@ header{
 .navLinks li a:hover {
     color: var(--letra-color) ;    
 }
+*/
 
 
 .bNeon {
     border: .25em solid var(--glow-color);
     padding: 10px 15px;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.1rem;
     background-color: var(--btn-color);
     border-radius: 1em;
     outline: none;
@@ -55,6 +111,8 @@ header{
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
    }
    
    .bNeon::after {
@@ -67,7 +125,7 @@ header{
     width: 100%;
     background-color: var(--glow-spread-color);
     filter: blur(2em);
-    opacity: .7;
+    font-size: 1.2rem;    
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
    }
    
