@@ -1,5 +1,7 @@
 import { useState,useEffect } from "react"
+import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList"
+
 
 const productos = [
     {id:1, name: "Remera", price:100, img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
@@ -28,7 +30,7 @@ const ItemListContainer = ()=>{
    
     return(
 
-        <div>
+        <div className="container">
             <ItemList items={productos}/>
         </div>
     )

@@ -1,8 +1,10 @@
 .card {
     color: var(--letra-color);
-    cursor: pointer;
     width: 20%;
-    margin: 20px;
+    margin: 5rem;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
     text-align: center;
     background: rgb(253, 224, 255);
     border-radius: 5px;
@@ -10,6 +12,8 @@
     transition: all .2s;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
    }
+
+   
    
 .card:hover {
     box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
@@ -25,16 +29,15 @@
 }
 
 h3{
-    color: var(--letra-color);
     text-align: center;
     font-size: 28px;
     margin: 0;
     padding-top: 10px;
+    color: var(--letra-color);
 }
 
 .galeria{
-    display: flex;
-    flex-wrap: 100%;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
