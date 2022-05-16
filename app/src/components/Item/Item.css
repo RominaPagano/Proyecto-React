@@ -36,7 +36,7 @@ h3{
     color: var(--letra-color);
 }
 
-.galeria{
+.gallery{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;

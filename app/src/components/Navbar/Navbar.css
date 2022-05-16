@@ -30,8 +30,8 @@
 
 }
 
-.navbar ul li a{
-    text-decoration: none;
+.navbar ul li p{
+    text-decoration: none;    
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
@@ -54,50 +54,8 @@
 }
 
 
-
-/*li, a {
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    color: var(--letra-color);
-    text-decoration: none;
-    
-
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    
-    
-}
-
-.logo{
-    cursor: pointer;
-    width: 50px;
-}
-
-.navLinks{
-    list-style-type: none;
-}
-.navLinks li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-.navLinks li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navLinks li a:hover {
-    color: var(--letra-color) ;    
-}
-*/
-
-
 .bNeon {
+    
     border: .25em solid var(--glow-color);
     padding: 10px 15px;
     color: whitesmoke;

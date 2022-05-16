@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
 import logo from '/src/img/logo.jpg'
@@ -9,36 +10,19 @@ function Navbar (){
                 <img className="logo" src={logo} alt="logo"/>
 
                 <ul className="navLinks">
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="#">Productos</a></li>
-                    <li> <a href="#">Sobre nosotros</a></li>
-                    <a  href="#"><button className="bNeon">Contacto</button></a>
+                    <Link to = '/'>
+                    <li> <p>Inicio</p></li>
+                    </Link>
+                    <li> <p>Vestidos</p></li>
+                    <li> <p>Remeras</p></li>
+                    <li> <p>Short</p></li>
+                    <p> <button className="bNeon">Contacto</button></p>
                 </ul>
                 <CartWidget/>
 
 
             </div>
-        </div>
-            
-            
-        
-        
-        /*
-        <header>   
-        <img className="logo" src={logo} alt="logo"/>
-
-            <nav>
-                <ul className="navLinks">
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="#">Productos</a></li>
-                    <li> <a href="#">Sobre nosotros</a></li>
-                    <li><a className="cta" href="#"><button className="bNeon">Contacto</button></a></li>
-                </ul>
-            </nav>
-            <CartWidget/>
-        </header>
-        */
-        
+        </div>       
         
     )
 }
