@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
 import logo from '/src/img/logo.jpg'
@@ -10,13 +10,12 @@ function Navbar (){
                 <img className="logo" src={logo} alt="logo"/>
 
                 <ul className="navLinks">
-                    <Link to = '/'>
-                    <li> <p>Inicio</p></li>
-                    </Link>
-                    <li> <p>Vestidos</p></li>
-                    <li> <p>Remeras</p></li>
-                    <li> <p>Short</p></li>
-                    <p> <button className="bNeon">Contacto</button></p>
+                    <li><NavLink to = '/'>Inicio</NavLink></li>
+
+                    <li><NavLink to = '/category/vestidos'>Vestidos</NavLink></li>
+                    <li><NavLink to = '/category/remeras'>Remeras</NavLink></li>
+                    <li><NavLink to = '/category/pantalones'>Pantalones</NavLink></li>
+                
                 </ul>
                 <CartWidget/>
 

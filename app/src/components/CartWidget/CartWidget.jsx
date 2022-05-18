@@ -1,13 +1,13 @@
 import { BsCart2 } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import "./CartWidget.css"
 
 const CartWidget = () => {
 
   return (
-    <Link to="/cart">
-      <li className="a bCarrito"><BsCart2/></li>
-    </Link>
+    
+    <NavLink to="/cart" className="bCarrito"><BsCart2/></NavLink>
+    
   )
 }
 

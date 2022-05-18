@@ -1,13 +1,13 @@
 const products = [
-    {id: "1", category: "Remeras" ,name: "Remera", price:100, img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "2" ,category: "Remeras",name: "Remeras",price:200,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "3" ,category: "Remeras",name: "Remeras",price:300,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "4" , category: "Vestidos" ,name: "Vestido", price:100, img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "5" ,category: "Vestidos",name: "Vestido",price:200,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "6" ,category: "Vestidos",name: "Vestido",price:300,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "7" , category: "Short" ,name: "Short", price:100, img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "8" ,category: "Short",name: "Short",price:200,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"},
-    {id: "9" ,category: "Short",name: "Short",price:300,img: "https://images.unsplash.com/photo-1542114551-ed4aed241d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"}
+    { id: "1", category: "remeras",  name: "Remera",  price:100, img: "https://images.pexels.com/photos/8810328/pexels-photo-8810328.jpeg?cs=srgb&dl=pexels-los-muertos-crew-8810328.jpg&fm=jpg"},
+    { id: "2", category: "remeras",  name: "Remera", price:200, img: "https://images.pexels.com/photos/8810328/pexels-photo-8810328.jpeg?cs=srgb&dl=pexels-los-muertos-crew-8810328.jpg&fm=jpg"},
+    { id: "3", category: "remeras",  name: "Remera", price:300, img: "https://images.pexels.com/photos/8810328/pexels-photo-8810328.jpeg?cs=srgb&dl=pexels-los-muertos-crew-8810328.jpg&fm=jpg"},
+    { id: "4", category: "vestidos", name: "Vestido", price:100, img: "https://images.pexels.com/photos/2173382/pexels-photo-2173382.jpeg?cs=srgb&dl=pexels-%D1%81%D0%BD%D0%B5%D0%B6%D0%B0%D0%BD%D0%B0-2173382.jpg&fm=jpg"},
+    { id: "5", category: "vestidos", name: "Vestido", price:200, img: "https://images.pexels.com/photos/2173382/pexels-photo-2173382.jpeg?cs=srgb&dl=pexels-%D1%81%D0%BD%D0%B5%D0%B6%D0%B0%D0%BD%D0%B0-2173382.jpg&fm=jpg"},
+    { id: "6", category: "vestidos", name: "Vestido", price:300, img: "https://images.pexels.com/photos/2173382/pexels-photo-2173382.jpeg?cs=srgb&dl=pexels-%D1%81%D0%BD%D0%B5%D0%B6%D0%B0%D0%BD%D0%B0-2173382.jpg&fm=jpg"},
+    { id: "7", category: "pantalones", name: "Pantalon",   price:100, img: "https://images.pexels.com/photos/8810330/pexels-photo-8810330.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"},
+    { id: "8", category: "pantalones", name: "Pantalon",   price:200, img: "https://images.pexels.com/photos/8810330/pexels-photo-8810330.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"},
+    { id: "9", category: "pantalones", name: "Pantalon",   price:300, img: "https://images.pexels.com/photos/8810330/pexels-photo-8810330.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"}
 ]
     
    

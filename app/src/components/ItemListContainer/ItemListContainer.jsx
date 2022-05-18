@@ -10,12 +10,12 @@ const ItemListContainer = ()=>{
     const [products, setItem] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const {id} = useParams()    
+    const {category} = useParams()    
 
     useEffect(()=>{
-        if(id){
+        if(category){
             getFetch()
-                .then(resp => setItem(resp.filter((prods)=>prods.category === id)))
+                .then(resp => setItem(resp.filter((prods)=>prods.category === category)))
                 .catch((err)=>console.log(err))
                 .finally (()=>setLoading(false))
         }else{
@@ -25,8 +25,8 @@ const ItemListContainer = ()=>{
                 .finally (()=>setLoading(false))
 
         }
-    }, [id])
-
+    }, [category])
+    
       
     return(
 

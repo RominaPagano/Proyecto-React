@@ -22,7 +22,7 @@
     width: 50px;
 }
 
-.navbar ul li{
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
@@ -30,14 +30,14 @@
 
 }
 
-.navbar ul li p{
+.navbar ul li a{
     text-decoration: none;    
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
 }
 
-.navbar ul li::before{
+.navbar ul li a::before{
     content: "";
     height: 3px;
     width: 0%;
@@ -48,7 +48,7 @@
     transition: 0.4s ease-out;
 }
 
-.navbar ul li:hover::before{
+.navbar ul li a:hover::before{
     width: 100%;
 
 }

@@ -12,6 +12,7 @@ const ItemDetail = ({product}) => {
             name= {product.name}
             price={product.price}
             img=  {product.img} />
+            
     </div>
 
   
