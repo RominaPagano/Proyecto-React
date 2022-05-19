@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+
 :root{
   --bg-color:#ffc9ec;
   --letra-color: #584391;
@@ -8,12 +11,19 @@
   --btn-color: rgb(100, 61, 136);
 }
 
+*{
+  margin: 0 ;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+
+}
 
 body{
-  margin: 0 ;
   text-align: center;
   background-image: url(./img/bg-img.jpg);
-  font-family: sans-serif;
-  
+  /*
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  */
 }
 
