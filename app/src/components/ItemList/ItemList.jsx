@@ -11,11 +11,10 @@ const ItemList = ({items}) => {
                                 price={prod.price}
                                 img=  {prod.img} 
                                 id = {prod.id}/>)   
-    
- 
     )
 }
-              
-
+    
+ 
 
 export default ItemList
+

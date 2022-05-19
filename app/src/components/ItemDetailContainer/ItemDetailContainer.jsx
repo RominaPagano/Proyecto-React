@@ -7,11 +7,9 @@ export const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
     const [loader, setLoader] = useState(true)
 
+    
     const {id} = useParams()
     
-    
-    
-
     useEffect(()=>{
         getFetch(id)//fetch que llama a la api
             .then((res) => {setProduct(res)})
@@ -32,6 +30,8 @@ export const ItemDetailContainer = () => {
         </div>
         )
     }
+    
+
             
             
             

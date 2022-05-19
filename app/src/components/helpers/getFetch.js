@@ -19,10 +19,10 @@ export const getFetch = (id)=> {
             : products
             resolve (query)
         },2000)
-
     })
-
 }
+
+
             
     
     

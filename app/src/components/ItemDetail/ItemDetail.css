@@ -10,8 +10,6 @@
     
 }
 
-
-
 .sproduct select{
     display: block;
     padding: 5px 10px;
@@ -36,3 +34,4 @@
     opacity: 1;
     transition: 0.3s all;
 }
+
