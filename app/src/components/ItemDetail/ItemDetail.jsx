@@ -1,11 +1,25 @@
 
 import { ItemCount } from "../ItemCount/itemCount"
 import './ItemDetail.css'
+import { useState } from "react";
+import OptionButtons from "../OptionButtons";
+
 
 const ItemDetail = ({product}) => {
+  const [inputType, setInputType]= useState('button')
+
+  const handleInter = () =>{
+    setInputType ('input')
+  }
+
+  function onAdd (quantity) {
+    console.log(`${quantity} ${product.name}`)
+  }
+ 
   return (
+    
     <section className='container sproduct my-5 pt-5 me-5'>
-      <div className='row mt-50'>
+     <div className='row mt-50'>
         <div className='col-lg-5 col-md-12 col-12'>
           <img className='img-fluid pb-1' src={product.img}  width={400} alt="" />
         </div>
@@ -18,9 +32,17 @@ const ItemDetail = ({product}) => {
             Pariatur, doloremque quibusdam id iure assumenda natus voluptates
             culpa at unde quis illo. Dolores cum ea velit aspernatur dignissimos
             reprehenderit? Consectetur, quisquam.
-          </span>
-
-          <ItemCount initial={1} stock={5} onAdd={(quantity)=>alert(`${quantity} productos`)}/>
+  </span>
+          {
+            inputType === 'button' ?
+              <ItemCount 
+                initial={1} 
+                stock={product.stock} 
+                onAdd={onAdd}
+                handleInter={handleInter}/>
+            :
+            <OptionButtons/>
+          }
         </div>
       </div>
     </section>
@@ -28,6 +50,12 @@ const ItemDetail = ({product}) => {
 }
 
 export default ItemDetail
+
+            
+            
+
+
+    
 
 
 
