@@ -7,7 +7,7 @@ import { getFetch } from "../helpers/getFetch"
 
 
 const ItemListContainer = ()=>{
-    const [products, setItem] = useState([])
+    const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
     const {category} = useParams()    
@@ -15,12 +15,12 @@ const ItemListContainer = ()=>{
     useEffect(()=>{
         if(category){
             getFetch()
-                .then(resp => setItem(resp.filter((prods)=>prods.category === category)))
+                .then(resp => setProducts(resp.filter((prods)=>prods.category === category)))
                 .catch((err)=>console.log(err))
                 .finally (()=>setLoading(false))
         }else{
             getFetch()
-                .then(resp => setItem(resp))
+                .then(resp => setProducts(resp))
                 .catch((err)=>console.log(err))
                 .finally (()=>setLoading(false))
 
@@ -34,7 +34,7 @@ const ItemListContainer = ()=>{
             {loading ?
             <h2>Loading...</h2>
             :
-            <ItemList items={products}/>
+            <ItemList products={products}/>
             }
         </div>
     )

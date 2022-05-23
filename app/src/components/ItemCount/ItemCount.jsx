@@ -28,7 +28,7 @@ export function ItemCount({stock,initial,onAdd, handleInter}){
             <button  onClick={decrease}>-</button>
             <button  onClick={increase}>+</button>
             <p>{count}</p>
-            <button  className="bCard" onClick={addCart}>Agregar al carrito</button>
+            <button  className="bCard" onClick={()=>addCart(count)}>Agregar al carrito</button>
         </div>
     )    
 }
