@@ -7,7 +7,9 @@ import { FiMenu } from "react-icons/fi";
 import { FiChevronLeft } from "react-icons/fi";
 
 
+
 function Navbar (){
+    
     return(
         <>
             <header className="header">
@@ -22,6 +24,8 @@ function Navbar (){
                         <NavLink to = '/'>Inicio</NavLink>
                         <NavLink to = '/'>Nosotros</NavLink>
                         <NavLink to = '/'>Contacto</NavLink>
+            
+                        <CartWidget /> 
                         </nav>
                 </div>
             </header>
@@ -35,7 +39,8 @@ function Navbar (){
                         <NavLink to = '/category/remeras'>Remeras</NavLink>
                         <NavLink to = '/category/camisas'>Camisas</NavLink>
                         <NavLink to = '/category/pantalones'>Pantalones</NavLink>
-                        <CartWidget/>
+                        
+                        <CartWidget/> 
                     </nav>
                     <label htmlFor="btn-menu" className="icon-equis"><FiChevronLeft/></label>
                 </div>

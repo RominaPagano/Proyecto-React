@@ -40,7 +40,7 @@ const ItemDetail = ({product}) => {
             Pariatur, doloremque quibusdam id iure assumenda natus voluptates
             culpa at unde quis illo. Dolores cum ea velit aspernatur dignissimos
             reprehenderit? Consectetur, quisquam.
-  </span>
+        </span>
           {
             inputType === 'button' ?
               <ItemCount 
