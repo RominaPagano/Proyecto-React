@@ -30,9 +30,7 @@
     color: white;
 }
 
-p{
-    color: #252525;
-}
+
 
 tbody{
     color: var(--glow-color);
@@ -64,7 +62,7 @@ tbody{
 
 .cart .table tbody tr td h5{
     font-size: 16px;
-    color: rgb(56, 56, 56);
+    color: white;
     margin-bottom: 0px;
     font-weight: bold;
 }
@@ -122,6 +120,7 @@ tbody{
 
 .checkout ul li.cart-total{
     padding-top: 10px;
+    color: aliceblue;
     
 }
 

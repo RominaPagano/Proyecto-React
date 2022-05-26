@@ -1,14 +1,15 @@
 import { useCartContext } from "../../Context/CartContext"
 import "./Cart.css"
 import { FiChevronDown,FiChevronUp } from "react-icons/fi";
+import { ItemCount } from "../ItemCount/ItemCount";
 
 
 
 
 export const Cart = () => {
-  const{ cartList, deleteCart, totalPrice, removeItem} = useCartContext()
+  const{ cartList, deleteCart, totalPrice, removeItem, totalQty} = useCartContext()
   
-
+  
   return (
     <>   
       <section className="mt-5">
@@ -21,7 +22,7 @@ export const Cart = () => {
                     <th scope="col" className="text-white">Producto</th>
                     <th scope="col" className="text-white">Precio</th>
                     <th scope="col" className="text-white">Cantidad</th>
-                    {/*<th scope="col" className="text-white">Total</th>*/}
+                    <th scope="col" className="text-white">Total</th>
                     
                   </tr>
                 </thead>
@@ -34,7 +35,7 @@ export const Cart = () => {
                           <div>
                             <img src={product.img} alt="" width={145}/>
                               <div className="des">
-                                <p>{product.name}</p>
+                                <h5>{product.name}</h5>
                               </div>
                           </div>
                         </div>
@@ -44,7 +45,7 @@ export const Cart = () => {
                       </td>
                       <td>
                         <div className="counter">
-                          <p>{product.quantity} <button className="btn"onClick={()=>removeItem(product.id)}>x</button></p>
+                          <h5>{product.quantity}</h5>
                           
                           {/*
                           <i className="fas fa-angle-down"><FiChevronDown/></i>
@@ -54,11 +55,10 @@ export const Cart = () => {
 
                         </div>
                       </td>
-                      {
-                      /*<td>
-                          <p>500</p>
-                        </td>*/
-                      }
+                      <td>
+                          <h5>${product.quantity*product.price} <button className="btn"onClick={()=>removeItem(product.id)}>x</button></h5>
+                      </td>
+                      
                     </tr>
                   </tbody>
                 )}
@@ -79,7 +79,12 @@ export const Cart = () => {
        </div>
     </>
   )
+
+
 }
+
+  
+
 
                       
 
