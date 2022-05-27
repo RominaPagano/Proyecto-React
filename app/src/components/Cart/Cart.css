@@ -133,6 +133,21 @@ tbody{
     float: right;
 }
 
+
+
+
+
+
+/*Buttons*/
+.bDeleteCart{
+    margin-left: 68%;
+    background-color:var(--glow-color);
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    border: none;
+}
+
 .checkout .proceed-btn{
     background-color: var(--glow-color);
     font-size: 15px;
@@ -145,14 +160,41 @@ tbody{
     margin-bottom: 50px;
 }
 
+.proceed-btn:hover{
+    color:white;
+    background-color: rgb(192, 134, 255);
+    transition: all 1s;
+    border: none;
 
-.deleteCart{
-    margin-left: 68%;
-    background-color:var(--glow-color);
-    font-weight: bold;
+}
+
+.bProducto{
+    background-color: var(--glow-color);
     color: white;
-    padding: 11px;
+    border: none;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 1%;
+    padding: 15px 25px 14px 25px;
+}
+
+.bProducto:hover{
+    color:white;
+    background-color: rgb(192, 134, 255);
+    transition: all 1s;
     border: none;
 }
 
 
+h3{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn{
+    color:white;
+    font-size: 16px;
+}
+.btn:hover{
+    color: rgb(207, 110, 255);
+}

@@ -1,17 +1,33 @@
 import { useCartContext } from "../../Context/CartContext"
 import "./Cart.css"
 import { FiChevronDown,FiChevronUp } from "react-icons/fi";
-import { ItemCount } from "../ItemCount/ItemCount";
+import { RiDeleteBinLine} from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 
 
 
 export const Cart = () => {
   const{ cartList, deleteCart, totalPrice, removeItem, totalQty} = useCartContext()
+
+  if(!totalQty()){
+    return(
+      <div>
+      <h3>El carrito esta vacío</h3>
+       <Link to = "/">
+            <button className="bProducto">Ver productos</button>        
+        </Link>  
+
+      </div>
+        
+    )
+  }  
+
   
   
   return (
     <>   
+    
       <section className="mt-5">
         <div className="container">
           <div className="cart">
@@ -22,8 +38,8 @@ export const Cart = () => {
                     <th scope="col" className="text-white">Producto</th>
                     <th scope="col" className="text-white">Precio</th>
                     <th scope="col" className="text-white">Cantidad</th>
-                    <th scope="col" className="text-white">Total</th>
-                    
+                    <th scope="col" className="text-white">Total </th>
+                    <button onClick={deleteCart} className="btn" ><RiDeleteBinLine/></button>                     
                   </tr>
                 </thead>
 
@@ -66,7 +82,11 @@ export const Cart = () => {
             </div>
            </div>
          </div>
-         <button onClick={deleteCart} className="deleteCart" >Vaciar Carrito</button> 
+          
+          <Link to = "/"><button className="bProducto">Ver lista de productos</button></Link> 
+         
+        
+        
       </section>
 
        <div className="col-lg-4 offset-lg-4">

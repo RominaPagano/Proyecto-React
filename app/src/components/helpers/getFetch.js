@@ -43,9 +43,8 @@ const products = [
         id: "6", 
         category: "camisas",    
         name: "Camisa Sober",
-        stock:8,     
         price:300, 
-        stock:7,  
+        stock:8,      
         img: "https://images.pexels.com/photos/10131742/pexels-photo-10131742.jpeg?cs=srgb&dl=pexels-cottonbro-10131742.jpg&fm=jpg"
     },
     { 
