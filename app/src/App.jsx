@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <CartContextProvider>
-        <div>       
+            
           <Navbar/>
           <Routes>
             <Route path ="/" element = {<ItemListContainer/>} />
@@ -22,7 +22,7 @@ function App() {
             <Route path='/cart' element = {<Cart/>} />
             <Route path= "/*" element = {<Navigate to  = "/" replace />} />
           </Routes>
-        </div>
+        
       </CartContextProvider>
     </BrowserRouter>
   )

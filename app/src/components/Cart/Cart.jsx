@@ -1,30 +1,73 @@
 import { useCartContext } from "../../Context/CartContext"
 import "./Cart.css"
-import { FiChevronDown,FiChevronUp } from "react-icons/fi";
-import { RiDeleteBinLine} from "react-icons/ri";
+
 import { Link } from "react-router-dom";
+import CartItem from "./CartItem";
+import { RiDeleteBinLine} from "react-icons/ri";
 
 
 
 
 export const Cart = () => {
-  const{ cartList, deleteCart, totalPrice, removeItem, totalQty} = useCartContext()
+  const{ cartList, deleteCart, totalPrice,  totalQty} = useCartContext()
 
   if(!totalQty()){
     return(
-      <div>
-      <h3>El carrito esta vacío</h3>
-       <Link to = "/">
-            <button className="bProducto">Ver productos</button>        
-        </Link>  
 
+      <div>
+        <h3>El carrito esta vacío</h3>
+        <Link to = "/"><button className="bProducto">Ver productos</button></Link>  
       </div>
-        
+
     )
   }  
+  return (
+    <>   
+    
+      <section className="mt-5">
+        <div className="container">
+          <div className="cart">
+            <div className="table-responsive">
+              <table className="table">
+                <thead className="thead-color">
+                  <tr>
+                    <th scope="col" className="text-white">Producto</th>
+                    <th scope="col" className="text-white">Precio</th>
+                    <th scope="col" className="text-white">Cantidad</th>
+                    <th scope="col" className="text-white">Total </th>
+                    <button onClick={deleteCart} className="btn" ><RiDeleteBinLine/></button>
+                              
+                  </tr>
+                </thead>
+                {cartList.map(product => <CartItem key={product.id} product={product}/>)}
+              </table>
+              
+            </div>
+           </div>
+         </div>
+          
+          <Link to = "/"><button className="bProducto">Ver lista de productos</button></Link> 
+      </section>
+
+       <div className="col-lg-4 offset-lg-4">
+         <div className="checkout">
+           <ul>
+             <li className="cart-total">Total ${totalPrice()!== 0 && totalPrice()}</li>
+           </ul>
+           <a href="#" className="proceed-btn" >Comprar</a>
+         </div>
+       </div>
+    </>
+  )
+         
+}
+
+        
+
 
   
-  
+{/*
+
   return (
     <>   
     
@@ -43,7 +86,7 @@ export const Cart = () => {
                   </tr>
                 </thead>
 
-                {cartList.map(product =>
+                {cartList.map(product => 
                   <tbody>
                     <tr>
                       <td>
@@ -63,11 +106,7 @@ export const Cart = () => {
                         <div className="counter">
                           <h5>{product.quantity}</h5>
                           
-                          {/*
-                          <i className="fas fa-angle-down"><FiChevronDown/></i>
-                          <input type="text" className="input-number" value={product.quantity} min={1} max={product.stock}/>
-                          <i className="fas fa-angle-up" ><FiChevronUp/></i>
-                          */}
+                         
 
                         </div>
                       </td>
@@ -84,9 +123,6 @@ export const Cart = () => {
          </div>
           
           <Link to = "/"><button className="bProducto">Ver lista de productos</button></Link> 
-         
-        
-        
       </section>
 
        <div className="col-lg-4 offset-lg-4">
@@ -100,8 +136,7 @@ export const Cart = () => {
     </>
   )
 
-
-}
+                        */}
 
   
 
