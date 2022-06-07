@@ -9,6 +9,7 @@
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
   --btn-color: rgb(100, 61, 136);
+  --bg-color-card:rgb(253, 224, 255);
 }
 
 *{
@@ -20,7 +21,8 @@
 
 body{
   text-align: center;
-  background-image: url(./img/bg-img.jpg);
+  background-image: url(./img/3.jpg);
+
   /*
   background-size: 100vw 100vh;
   background-repeat: no-repeat;

@@ -5,6 +5,7 @@
     top: 0;left: 0;
 }
 /*Estilos para el encabezado*/
+
 .header{
     width: 100%;
     height: 100px;
@@ -58,10 +59,8 @@
 }
 
 
-
-
-
 /*Menù lateral*/
+
 #btn-menu{
     display: none;
 }
@@ -81,7 +80,7 @@
 .cont-menu{
     width: 100%;
     max-width: 250px;
-    background: #1c1c1c;
+    background-color:    #c7aff4   ;
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
@@ -97,13 +96,13 @@
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: #c7c7c7;
+    color: var(--letra-color);
     border-left: 5px solid transparent;
     transition: all 400ms ease;
 }
 .cont-menu nav a:hover{
     border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
+    background:  #dbbcf2  ;
 }
 .cont-menu label{
     position: absolute;

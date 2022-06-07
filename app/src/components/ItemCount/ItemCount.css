@@ -7,9 +7,14 @@
     border: 0;
     outline: none;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 20px;
     background: var(--glow-color) ;
     
 
 }
 
+.divCount{
+    margin-top: 2.8rem;
+    font-weight: bold;
+    
+}

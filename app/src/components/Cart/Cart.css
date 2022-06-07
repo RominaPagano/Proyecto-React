@@ -13,8 +13,7 @@
 }
 
 .cart .table .tbody tr td{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     vertical-align: middle;
     align-self: center;
     
@@ -186,7 +185,7 @@ tbody{
 }
 
 
-h3{
+.deleteCart{
     margin-top: 100px;
     margin-bottom: 100px;
 }

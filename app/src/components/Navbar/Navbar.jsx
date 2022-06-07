@@ -1,10 +1,11 @@
-
 import {NavLink} from "react-router-dom";
-import CartWidget from "../CartWidget/CartWidget";
-import "./Navbar.css";
-import logo from '/src/img/logo.jpg'
 import { FiMenu } from "react-icons/fi";
 import { FiChevronLeft } from "react-icons/fi";
+
+import CartWidget from "../CartWidget/CartWidget";
+import logo from '/src/img/logo.jpg'
+
+import "./Navbar.css";
 
 
 
@@ -21,10 +22,7 @@ function Navbar (){
                         <img src={logo} alt="logo" width={50}/>
                     </div>
                         <nav className="menu">
-                        <NavLink to = '/'>Inicio</NavLink>
-                        <NavLink to = '/'>Nosotros</NavLink>
-                        <NavLink to = '/'>Contacto</NavLink>
-            
+                        <NavLink to = '/'>Inicio</NavLink>           
                         <CartWidget /> 
                         </nav>
                 </div>
@@ -46,6 +44,7 @@ function Navbar (){
                 </div>
             </div>
         </>
+    
     )
 }
 
