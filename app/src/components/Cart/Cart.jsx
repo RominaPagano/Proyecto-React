@@ -67,59 +67,69 @@ export const Cart = () => {
       <div>
         {orderSent 
         ?
-        <div>
-          <h3>La compra a finalizado correctamente. Gracias por elegirnos!</h3>    
-          <h3>Código de seguimiento: {orderId}</h3> 
+        <div className="cards-list">
+          <div className="cardTy">
+          <div class="card_image"> <img src="https://c.tenor.com/_f_tIGpRlkIAAAAC/aeshetic-clouds.gif" /> </div>
+          <div class="card_title title-white">
+            <p>Gracias por su compra!</p>  
+            <p>Código de seguimiento:</p>
+            <p>{orderId}</p> 
+          </div>          
+          </div>
+          
         </div>
+          
         :
-        <h3 className="deleteCart">El carrito esta vacío</h3>}
-        <Link to = "/"><button className="bProducto">Ver productos</button></Link>  
-      </div>
-
+          <h3 className="deleteCart">El carrito esta vacío</h3>}
+            <Link to = "/"><button className="bProducto">Ver productos</button></Link>  
+          </div>
+  
+      )
+    }  
+    
+    return (
+      <>   
+      
+        <section className="mt-5">
+          <div className="container">
+            <div className="cart">
+              <div className="table-responsive">
+                <table className="table">
+                  <thead className="thead-color">
+                    <tr>
+                      <th scope="col" className="text-white">Producto</th>
+                      <th scope="col" className="text-white">Precio</th>
+                      <th scope="col" className="text-white">Cantidad</th>
+                      <th scope="col" className="text-white">Total </th>         
+                    </tr>
+                  </thead>
+                  {cartList.map(product => <CartItem key={product.id} product={product}/>)}
+                </table>
+                
+              </div>
+             </div>
+           </div>
+        </section>
+  
+         <div className="col-lg-4 offset-lg-4">
+           <div className="checkout">
+             <ul>
+               <li className="cart-total">Total ${totalPrice()!== 0 && totalPrice()}</li>
+             </ul>
+             <a className="proceed-btn" onClick={sendOrder}>Comprar</a>
+             <Link to = "/"><button className="bProducto">Seguir comprando</button></Link>
+            <button onClick={deleteCart} className="bProducto ms-1">Vaciar carrito</button> 
+           </div>
+         </div>
+  
+      </>
     )
-  }  
+           
+  }
+          
 
 
   
-  return (
-    <>   
-    
-      <section className="mt-5">
-        <div className="container">
-          <div className="cart">
-            <div className="table-responsive">
-              <table className="table">
-                <thead className="thead-color">
-                  <tr>
-                    <th scope="col" className="text-white">Producto</th>
-                    <th scope="col" className="text-white">Precio</th>
-                    <th scope="col" className="text-white">Cantidad</th>
-                    <th scope="col" className="text-white">Total </th>         
-                  </tr>
-                </thead>
-                {cartList.map(product => <CartItem key={product.id} product={product}/>)}
-              </table>
-              
-            </div>
-           </div>
-         </div>
-      </section>
-
-       <div className="col-lg-4 offset-lg-4">
-         <div className="checkout">
-           <ul>
-             <li className="cart-total">Total ${totalPrice()!== 0 && totalPrice()}</li>
-           </ul>
-           <a className="proceed-btn" onClick={sendOrder}>Comprar</a>
-           <Link to = "/"><button className="bProducto">Seguir comprando</button></Link>
-          <button onClick={deleteCart} className="bProducto ms-1">Vaciar carrito</button> 
-         </div>
-       </div>
-
-    </>
-  )
-         
-}
 
   
 

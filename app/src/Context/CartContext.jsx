@@ -8,6 +8,7 @@ export const useCartContext = () => useContext(CartContext)
 const CartContextProvider = ({children}) =>{
     //estados y funciones globales
     const [cartList, setcartList] = useState([])//se guardan mis productos añadidos
+    
 
     
 
@@ -51,6 +52,8 @@ const CartContextProvider = ({children}) =>{
         setcartList ([])
     }
 
+   
+
     return(
         <CartContext.Provider value={ {
              cartList,
@@ -58,7 +61,8 @@ const CartContextProvider = ({children}) =>{
              deleteCart,
              removeItem,
              totalQty,
-             totalPrice         
+             totalPrice,
+                     
         }}>
             {children}
         </CartContext.Provider>

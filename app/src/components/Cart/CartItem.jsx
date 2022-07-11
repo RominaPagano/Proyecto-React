@@ -7,7 +7,7 @@ import { useCartContext } from "../../Context/CartContext"
 
 
 export default function CartItem({product}) {
-    const {removeItem} = useCartContext();
+    const {removeItem, update} = useCartContext();
     
     return (
         <>
@@ -31,11 +31,7 @@ export default function CartItem({product}) {
 
                     <td>
                         <div className="counter">
-                            <h5>{product.quantity}</h5>
-                        {/* <i className="fas fa-angle-down"><FiChevronDown/></i>
-                            <input type="number" className="input-number" value={product.quantity}/>
-                            <i className="fas fa-angle-up" ><FiChevronUp/></i>*/
-                        }
+                            <h5>{product.quantity}</h5>                        
                         </div>
                     </td>
 

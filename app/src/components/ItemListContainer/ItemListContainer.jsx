@@ -30,12 +30,21 @@ const ItemListContainer = ()=>{
 return(
     <div className="container">
         {loading ?
-        <h2>Loading...</h2>
+                <div class="containerLoader">
+                    <div class="loader loader-13">
+                    <div class="css-heart heart1"></div>
+                    <div class="css-heart heart2"></div>
+                    <div class="css-heart heart3"></div>
+                    <div class="css-heart heart4"></div>
+                    </div>
+                </div>
         :
         <ItemList products={products}/>
         }
     </div>
 )
+        
+            
 }
 
 export default ItemListContainer

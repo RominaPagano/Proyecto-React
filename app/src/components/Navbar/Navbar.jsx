@@ -37,6 +37,8 @@ function Navbar (){
                         <NavLink to = '/category/remeras'>Remeras</NavLink>
                         <NavLink to = '/category/camisas'>Camisas</NavLink>
                         <NavLink to = '/category/pantalones'>Pantalones</NavLink>
+                        <NavLink to = '/category/conjuntos'>Conjuntos</NavLink>
+                        <NavLink to = '/category/abrigos'>Abrigos</NavLink>
                         
                         <CartWidget/> 
                     </nav>
